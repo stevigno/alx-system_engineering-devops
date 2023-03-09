@@ -1,2 +1,2 @@
-the command is "su betty"
+#!/bin/bash su betty
 end
