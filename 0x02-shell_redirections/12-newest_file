@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -lt | awk '!/\.$/ && !/^\.\.$/ && !/^total/ {print $0}' | head -n 10
