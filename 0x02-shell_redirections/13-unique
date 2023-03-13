@@ -1,0 +1,11 @@
+#!/bin/bash
+readarray -t words
+declare -A counts
+for word in "${words[@]}"; do
+  (( counts["$word"]++ ))
+done
+for word in "${words[@]}"; do
+  if (( counts["$word"] == 1 )); then
+    echo "$word"
+  fi
+done | sort
