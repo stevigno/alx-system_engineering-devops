@@ -1,0 +1,2 @@
+#!/bin/bash
+echo $(($(echo $BINARY | fold -w1 | tac | awk '{s+=$1*(2**n++)} END {print s}') ))
